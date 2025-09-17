@@ -1,0 +1,5 @@
+a=int(5.5)
+print(type(a))
+print(a)
+b=float(a)
+print(b)
