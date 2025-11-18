@@ -82,13 +82,14 @@
 def returneven(fun):
     def wrapper(n):
         if n%2==0:
-            print(f"{fun(n)} is even")
+            return f"{n} is even"
         else:
-            return "The number is odd"
+            return f"{n} is odd"
     return wrapper
 
 def evenodd(n):
     return n
 
 w=returneven(evenodd)
-w(n=3)
+print(w(4))
+
