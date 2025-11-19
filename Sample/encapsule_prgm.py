@@ -1,5 +1,5 @@
 # class is encapsuled with method and attributes
-# Access specifies  -public private protected
+# Access specifies  -public protected private
 # Unlike (Java or C++), Python doesn’t have strict enforcement of access specifiers. 
 # Instead, it follows a naming convention to indicate the intended level of access.
 # protected _,   private __
