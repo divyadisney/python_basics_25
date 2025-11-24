@@ -122,3 +122,45 @@
 #     print("palindrome")
 # else:
 #     print("not")
+
+
+"""
+2
+3 5
+7 11 13
+17 19 23 29
+
+"""
+
+# n=100
+# count=0
+# l=[]
+# for j in range(2,n):
+#     for i in range(2,j):
+#         if(j%i == 0):
+#             break
+#     else:
+#         p=j
+#         l=l+[p]
+# c=0
+# for i in range(1,5+1):
+#     for k in range(i):
+#        print(l[c],end=" ")
+#        c=c+1
+#     print()
+
+num=2
+for row in range(1,6):
+    counter=0
+    while counter<row:
+        is_prime=True
+        for n in range(2,int(num*.5)+1):
+            if num%n==0:
+                is_prime=False
+            break
+        if is_prime:
+            counter+=1
+            print(num,end=" ")
+        num+=1
+    print("")
+

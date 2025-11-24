@@ -113,3 +113,22 @@ obj.role()
 o1=dept("Anna")
 o1.admin()"""
 
+class A:
+    def add(self,a,b):
+        self.c=a+b
+    
+
+class B(A):
+    def sub(self,m,n):
+        self.o= m-n
+    
+class C(B):
+    def add_sub(self):
+        print(f"{self.c}")
+        print(f"{self.o}")
+
+obj=C()
+obj.add(10,20)
+obj.add_sub()
+obj.sub(10,5)
+obj.add_sub()
